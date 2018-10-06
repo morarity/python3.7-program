@@ -1,3 +1,5 @@
+'''A simple bmi calculator '''
+
 class OverWeight: # class
 
 	#instances
