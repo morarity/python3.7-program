@@ -1,8 +1,6 @@
-'''A simple bmi calculator '''
+class OverWeight: # class.
 
-class OverWeight: # class
-
-	#instances
+	#instances.
 	def __init__(self, kg, tall):
 		self.kg = int(kg)
 		self.tall = float(tall)
@@ -26,5 +24,6 @@ class OverWeight: # class
 
 name = OverWeight(input('Put your weight in kilogram: '), input('Put your height in meter: ')) # your height and Weight
 
-print(name.bmi)
-print(name.overweight())
+if __name__ == '__main__':
+	print(name.bmi)
+	print(name.overweight())
