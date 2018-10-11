@@ -1,36 +1,25 @@
-class OverWeight: # class.
+#instances.
+def is_overweight():
+	weight = input('Your weight in kilograms: ')
+	height = input('Your height in meters: ')
+	kg = int(weight)
+	tall = float(height)
+	bmi = (kg / tall) / tall
+	print(bmi)
 
-	def my_program():
-		"""A simple program to calculate body mass index
-		"""
-		pass
+	if bmi <= 18.5:
+		 print('Underweight')
+	elif bmi <= 24.9:
+		 print('Normal Weight')
+	elif bmi <= 29.9:
+		 print('Overweight')
+	elif bmi <= 30:
+		 print('Obesity')
+	else:
+		 print('Not Defined likely Obese')
 
-	#instances.
-	def __init__(self, kg, tall):
-		self.kg = int(kg)
-		self.tall = float(tall)
-		self.bmi = float(self.kg / self.tall) / 1.75
-
-
-	#bmi calculator elif functions.
-	def is_overweight(self):
-		if self.bmi <= 18.5:
-			return 'Underweight'
-		elif self.bmi <= 24.9:
-			return 'Normal Weight'
-		elif self.bmi <= 29.9:
-			return 'Overweight'
-		elif self.bmi > 30:
-			return 'Obesity'
-		else:
-			return 'Not Defined'
-
-			
-print(OverWeight.my_program.__doc__)
-
-name = OverWeight(input('Put your weight in kilogram: '), input('Put your height in meter: ')) # your height and Weight
+	print('The normal weight is 24.9')
 
 if __name__ == '__main__':
-	print('Your bmi is {}'.format(name.bmi))
-	print('Your weight is {}'.format(name.is_overweight()))
+	is_overweight()
 	

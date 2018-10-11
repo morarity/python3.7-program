@@ -1,30 +1,18 @@
-class Grade:
-	
-	def my_program():
-		""" a simple program for calculating grades in python
-		"""
-		pass
-	
-	#instances
-	def __init__(self, score):
-		self.score = int(score)
+# grade calculation elif functions.
+def is_score():
+	grade = input('Enter your grade here: ')
+	grade = int(grade)
+	if grade >= 90:
+		print('A')
+	elif grade >= 80:
+		print('B')
+	elif grade >= 70:
+		print('C')
+	elif grade >= 60:
+		print('D')
+	else:
+		print('F')
 
-	# grade calculation elif functions.
-	def is_score(self):
-		if self.score >= 90:
-			return 'A'
-		elif self.score >= 80:
-			return 'B'
-		elif self.score >= 70:
-			return 'C'
-		elif self.score >= 60:
-			return 'D'
-		else:
-			return 'F'
-
-print(Grade.my_program.__doc__)
-name = Grade(input('Put your grade here: ')) # the example grade.
-
+#execution of program
 if __name__ == '__main__':
-	print(name.score)
-	print(name.is_score())
+	is_score()
