@@ -1,6 +1,10 @@
 class Grade:
-	# calculating of grade in python
-
+	
+	def my_program():
+		""" a simple program for calculating grades in python
+		"""
+		pass
+	
 	#instances
 	def __init__(self, score):
 		self.score = int(score)
@@ -18,6 +22,7 @@ class Grade:
 		else:
 			return 'F'
 
+print(Grade.my_program.__doc__)
 name = Grade(input('Put your grade here: ')) # the example grade.
 
 if __name__ == '__main__':
