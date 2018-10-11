@@ -13,7 +13,7 @@ class OverWeight: # class.
 
 
 	#bmi calculator elif functions.
-	def isoverweight(self):
+	def is_overweight(self):
 		if self.bmi <= 18.5:
 			return 'Underweight'
 		elif self.bmi <= 24.9:
@@ -32,5 +32,5 @@ name = OverWeight(input('Put your weight in kilogram: '), input('Put your height
 
 if __name__ == '__main__':
 	print('Your bmi is {}'.format(name.bmi))
-	print('Your weight is {}'.format(name.isoverweight()))
+	print('Your weight is {}'.format(name.is_overweight()))
 	

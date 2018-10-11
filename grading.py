@@ -10,7 +10,7 @@ class Grade:
 		self.score = int(score)
 
 	# grade calculation elif functions.
-	def isscore(self):
+	def is_score(self):
 		if self.score >= 90:
 			return 'A'
 		elif self.score >= 80:
@@ -27,4 +27,4 @@ name = Grade(input('Put your grade here: ')) # the example grade.
 
 if __name__ == '__main__':
 	print(name.score)
-	print(name.isscore())
+	print(name.is_score())
